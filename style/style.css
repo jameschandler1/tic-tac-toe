@@ -33,7 +33,6 @@ h1 {
 
 
 .titleBox {
-    /* background-color: rgba(0, 102, 255, 0.8); */
     margin: auto;
     display: flex;
     justify-content: center;
@@ -54,14 +53,23 @@ h1 {
 }
 
 .box {
+    font-family: 'Exo';
     border: 0px solid black;
     background-color: rgba(255, 255, 255, 0.9);
-    margin: 2px;
+    display: grid;
     width: 100px;
     height: 100px;
-    display: flex;
+    margin: auto;
     align-items: center;
     justify-content: center;
+}
+
+.box:hover {
+    background-color: rgba(255, 255, 255, 0.947);
+}
+
+.box:active {
+    background-color: rgba(177, 177, 177, 0.947);
 }
 
 #boxZero {
@@ -109,31 +117,44 @@ h1 {
     order: 0;
 }
 
-.reset {
+.play {
     color: rgb(255, 255, 255);
     letter-spacing: .5mm;
     display: flex;
-    line-height: 2.2;
     justify-content: center;
-    width: 125px;
-    height: 30px;
+    width: 200px;
+    height: 50px;
     margin: auto;
     background-color: rgba(0, 102, 255, 0.9);
     border: none;
+    border-radius: 2%;
     font-family: 'Exo';
     text-shadow: 0 0 0.09em rgba(0, 0, 0, 0.701), 0 0 0.2em #0560fe, 0 0 0.3em #95defe;
-
+    line-height: 6.8vh;
+}
+.play:hover {
+    background-color: rgba(0, 81, 255, 0.961);
+}
+.play:active {
+    background-color: rgb(0, 145, 255);
 }
  .pic{
     position: absolute;
-    top: auto;
-    bottom: center;
-    left: auto;
-    right: auto;
     z-index: -1;
     opacity: 99%;
     min-width: 600px;
     max-width: 600px;
     min-height: 600px;
     max-height: 600px;
+}
+
+.turn-message {
+    font-family: 'Exo';
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    height: 4vh;
+    justify-content: center;
+    margin: auto 0;
+    text-shadow: 0 0 0.09em rgba(0, 0, 0, 0.701), 0 0 0.2em #0560fe, 0 0 0.3em #95defe;
 }
